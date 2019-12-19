@@ -55,7 +55,7 @@ Use `[ngxSummernote]` directive on an element to init Summernote editor:
 ```html
 <div [ngxSummernote]></div>
 ```
-For two-way data binding ( [(ngModel)] use
+For two-way data binding ( [(ngModel)] ) use
 ```html
 <div [ngxSummernote]
      [(summernoteModel)]="yourModel"></div>
