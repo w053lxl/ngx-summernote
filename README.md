@@ -87,7 +87,7 @@ You may also configure Summernote with your own summernote config:
 ```html
 <div [ngxSummernote]="config"></div>
 ```
-```typescript
+```javascript
   config: any = {
         height: '200px',
        // uploadImagePath: '/api/upload',
@@ -100,7 +100,7 @@ You may also configure Summernote with your own summernote config:
           ['insert', ['picture']],
         ]
     };
-    ```
+```
 
 The provided config will be merged with the default one.
 
