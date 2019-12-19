@@ -37,11 +37,28 @@ Add add JQuery and Summernote scripts and styles in angular.json file:
   "node_modules/summernote/dist/summernote-lite.js"
 ]
 ```
+Note - If you are using Bootstrap 4, your angular.json should be:
+```json
+"styles": [
+  ...
+  "node_modules/summernote/dist/summernote-bs4.css"
+],
+"scripts": [
+  ...
+  "node_modules/jquery/dist/jquery.min.js",
+  "node_modules/summernote/dist/summernote-bs4.js"
+]
+```
 
 Use `[ngxSummernote]` directive on an element to init Summernote editor:
 
 ```html
 <div [ngxSummernote]></div>
+```
+For two-way data binding ( [(ngModel)] use
+```html
+<div [ngxSummernote]
+     [(summernoteModel)]="yourModel"></div>
 ```
 
 Summernote is initialized with the following deafult config:
